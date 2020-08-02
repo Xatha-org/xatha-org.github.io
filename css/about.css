@@ -1,0 +1,88 @@
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+body {
+    background-color: #010305;
+    color: #C9CCC4;
+    font-family: Roboto;
+}
+
+nav {
+  padding-top: 1.2em;
+  display: grid;
+  grid-template-columns: repeat(3, 1.6fr);
+  justify-items: start;
+  padding-bottom: 3rem;
+}
+
+nav a {
+  color: #C9CCC4;
+  text-decoration: none;
+  font-size: 1.7rem;
+}
+
+nav a:hover{
+  color: #1b5868;
+}
+
+#title {
+  color: #72e0d1; 
+  float: left;
+  padding-right: 5em;
+  margin: 0;
+  padding-top: 0.58em;
+  font-display: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+section {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  position: relative;
+  margin-top: 48px;
+  margin-bottom: 48px;
+}
+
+.container {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 100% 100%;
+
+}
+
+.container .desc {
+    text-align: none;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 3em;
+    padding-top: 3em;
+}
+
+.container .res {
+    text-align: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 3em;
+    margin: 0;
+}
+
+.container .res > a {
+    padding-right: 3em;
+    text-decoration: none;
+    font-size: 2em;
+    color: #72e0d1;
+}
+
+.container .res > a:hover {
+    color: #1f99e0;
+}
+
+.container .footer {
+    padding-top: 4em;
+}
