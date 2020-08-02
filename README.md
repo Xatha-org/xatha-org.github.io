@@ -1,2 +1,2 @@
 # xatha-org.github.io
-https://xatha.org
+https://www.xatha.org
