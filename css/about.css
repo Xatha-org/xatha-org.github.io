@@ -55,12 +55,7 @@ section {
 }
 
 .container .desc {
-    text-align: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-left: 3em;
-    padding-top: 3em;
+    padding-top: 5em;
 }
 
 .container .res {
@@ -85,4 +80,8 @@ section {
 
 .container .footer {
     padding-top: 4em;
+}
+
+#cursor{
+  font-size: 1.2em;
 }

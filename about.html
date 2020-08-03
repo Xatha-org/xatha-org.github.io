@@ -24,6 +24,7 @@
     <div class="container">
         <div class="desc">
             <h2>Xor And The Half Adder is a CTF team that was found in 2019 by Loozak and pop_eax</h2>
+            <p>trying to be from the best <span id="cursor">|</span></p>
         </div>
         <div class="res">
             <a href="https://github.com/Xatha-org/" target="_blank">github</a>
@@ -33,5 +34,18 @@
             <p>Xatha 2020 ®</p>
         </div>
     </div>
+    <script>
+        var cursor = true;
+        var speed = 250;
+        setInterval(() => {
+          if(cursor) {
+            document.getElementById('cursor').style.opacity = 0;
+            cursor = false;
+          }else {
+            document.getElementById('cursor').style.opacity = 1;
+            cursor = true;
+          }
+        }, speed);
+    </script>
 </body>
 </html>
