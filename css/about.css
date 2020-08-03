@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
 body {
-    background-color: #010305;
+    background-color: #1a1e24;
     color: #C9CCC4;
     font-family: Roboto;
 }
@@ -58,7 +58,7 @@ section {
     text-align: none;
     display: flex;
     align-items: center;
-    justify-content: left;
+    justify-content: center;
     padding-left: 3em;
     padding-top: 3em;
 }
