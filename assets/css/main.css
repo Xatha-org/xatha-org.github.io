@@ -1,0 +1,24 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #C9CCC4;
+    font-family: Roboto;
+}
+
+.grey-fill {
+    fill: #C9CCC4;
+}
+
+.status {
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+.footer {
+    padding-top: 4em;
+}

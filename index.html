@@ -1,104 +1,101 @@
-<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xatha team</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <div>
-        <h1 id="title"> Xatha </h1>
-    </div>
-    <nav>
-        <div>
-            <a href="#">Home</a>
-        </div>
-        <div>
-            <a href="javascript:alert('under construction')">Blog</a>
-        </div>
-        <div>
-            <a href="about.html">About</a>
-        </div>
-    </nav>
-    <div class="container">
-        <div class="header">
-            <div>
-                <h1>Xor And The Half Adder</h1>
-                <p><span id="typing"></span></p>
+   <head>
+      <link href="https://modesta.alexflipnote.dev/css/modesta.css" type="text/css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      <script src="assets/js/typing.js"></script>
+      <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+      <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+      <title>Xatha</title>
+   </head>
+   <body>
+      <div class="fullscreen">
+         <div class="background" style="background-image: url('assets/images/background.jpg');"></div>
+         <div class="center-object">
+            <div class="container">
+               <section class="me unset">
+                  <img draggable="false" src="assets/images/icon.png" class="image-title">
+               </section>
+               <div class="center">
+                    <h4><span id="typing"></span></h4>
+               </div>
+               <div class="buttons">
+                  <a href="https://github.com/Xatha-org" class="btn github animation hover" target="_blank">GitHub</a>
+                  <a href="https://ctftime.org/team/91616" class="btn watermelon animation hover" target="_blank">CTFTime</a>
+               </div>
             </div>
-        </div>
-        <div class="scroll-down"></div>
-        <section class="content">
-                <h1 class="title-2">Team members</h1>
-                <div class="overview">
-                    <div>
-                        <h1>pop_eax</h1>
-                        <p>Leader - CoFounder</p>
-                        <h2>hobbyist, CTF addict</h2>
-                        <h3>web, pwn, reversing, coding</h3>                        
-                    </div>
-                    <div>
-                        <h1>Loozak</h1>
-                        <p>Leader - CoFounder</p>
-                        <h2>hobbyist, sysadmin</h2>
-                        <h3>forensics, crypto, web</h3>                        
-                    </div>
-                    <div>
-                        <h1>0utWrest</h1>
-                        <p>Member</p>
-                        <h2>student</h2>
-                        <h3>web, crypto, reversing, coding</h3>                        
-                    </div>
-                    <div>
-                        <h1>ciph0n</h1>
-                        <p>Member</p>
-                        <h2>programmer</h2>
-                        <h3>jack of all trades</h3>                        
-                    </div>
-                    <div>
-                        <h1>yotamdabeast</h1>
-                        <p>Member</p>
-                        <h2>hobbyist, student</h2>
-                        <h3>web, misc</h3>                      
-                    </div>
-                    <div>
-                        <h1>Cereal (BubbaCereal)</h1>
-                        <p>Member</p>
-                        <h2>skid, student</h2>
-                        <h3>web, warmups</h3>                      
-                    </div>
-                    <div>
-                        <h1>notforsale</h1>
-                        <p>Member</p>
-                        <h2>Freelance penetration tester</h2>
-                        <h3>web, reversing, misc, stego</h3>                      
-                    </div>
-                    <div>
-                        <h1>Ianonhulk</h1>
-                        <p>Member</p>
-                        <h2>Bug Hunter, blue team</h2>
-                        <h3>web, misc</h3>                      
-                    </div>
-                </div>
-        </section>
-        <div class="footer">
+         </div>
+         <a href="#Team members">
+            <div id="fade" class="arrow bounce">
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 481.32 291.98" class="grey-fill">
+                 <path d="M466.5,15.5L466,15c-19.8-19.8-52-19.8-71.9,0L240.8,168.3L87.2,14.8C67.4-5,35.2-5,15.4,14.8l-0.5,0.5 C-5,35.2-5,67.4,14.8,87.2l186.6,186.6c0.9,1,1.8,2,2.7,3v0c3.8,3.8,8.1,6.9,12.7,9.3c17,9,38.1,7.7,53.9-3.9 c2.2-1.6,4.4-3.4,6.4-5.4L466.5,87.4C486.4,67.6,486.4,35.4,466.5,15.5z"/>
+               </svg>
+             </div>
+         </a>
+      </div>
+      <section class="container" id="Team members">
+         <div class="box-container row">
+            <div class="one-full column">
+               <h1><span id="cursor" string="Team members"></span></h1>
+            </div>
+            <div class="one-full flex-grid" id="addhere">
+            </div>
+         </div>
+      </section>
+      <div class="footer center">
             <p>Xatha 2020 ®</p>
         </div>
-    </div>
-</body>
-</html>
+   </body>
+   <script>
+      function addMember(name, role, bio, skills, pic, SM){
+         let div = document.createElement("div");
+         div.className = "col-xs-6";
+         div.innerHTML = `
+         <div class="container">
+                     <section class="me unset center flex">
+                        <div style="overflow: auto;">
+                           <img draggable="false" src="assets/images/team-icons/${pic}" class="image-title" style="float: left;">
+                           <h4 class="status">${name}</h4>
+                           <h6>${role}</h5>
+                        </div>
+                        <h6 class="status">${bio}</h6>
+                        <p>${skills}</p>
+                     </section>
+                     <div class="buttons" id="kk">
+                     `
+         if (SM) {
+            for (i in SM){
+               div.getElementsByClassName("buttons")[0].innerHTML += `
+                           <a href="${members[name][4][i]}" class="btn ${i} animation hover" target="_blank">${i}</a>               
+                        
+                  `;
+            }
+         }
+         div.innerHTML += `
+                     </div>
+               `;
+         document.getElementById("addhere").appendChild(div);
+      }
+      members = {
+                 "pop_eax" : ["Leader - CoFounder", "hobbyist, CTF addict", "web, pwn, reversing, coding", "pop-eax.png", {"Github": "https://github.com/pop-eax", "Twitter": "https://github.com/pop-eax"}],
+                 "Loozak" : ["Leader - CoFounder", "hobbyist, sysadmin", "forensics, crypto, web", "placeholder.jpg", {"Twitter": "https://twitter.com/Loozak1337"}],
+                 "0utWrest": ["Member", "student", "web, crypto, reversing, coding", "0utwrest.jpg", {"Github": "https://github.com/0utWrest"}],
+                 "ciph0n": ["Member", "programmer", "jack of all trades",  "ciph0n.jpg", {"Github": "https://github.com/ciph0n", "Twitter": "https://twitter.com/ciph0n_"}],
+                 "yotamdabeast": ["Member", "hobbyist, student", "web, misc", "placeholder.jpg"],
+                 "Cereal": ["Member", "skid, student", "web, warmups", "cereal.jpg"],
+                 "notforsale": ["Member", "Freelance penetration tester", "web, reversing, misc, stego", "placeholder.jpg"],
+                 "Ianonhulk": ["Member", "Bug Hunter, blue team", "web, misc", "Ianonhulk.png"]
+                 };
+      for (i in members){ 
+         if (!members[i][4]){
+            addMember(i, members[i][0], members[i][1], members[i][2], members[i][3]);
+         }
+         else{
+            addMember(i, members[i][0], members[i][1], members[i][2], members[i][3], members[i][4]);
+         }
+      }
 
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-<script>
-    var options = {
-        strings: ['Hacking Team', 'CTFers', '1337 Pwners', 'H4x0rs', 'Skids'],
-        typeSpeed: 120,
-        smartBackspace: 'true',
-        backSpeed: 110,
-        backDelay: 90,
-        loop: true,
-        showCursor: true
-    };
-    var typed = new Typed('#typing', options)
-</script>
+   </script>
+</html>
