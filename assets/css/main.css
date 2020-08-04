@@ -13,3 +13,12 @@ body {
 .grey-fill {
     fill: #C9CCC4;
 }
+
+.status {
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+.footer {
+    padding-top: 4em;
+}
