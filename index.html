@@ -39,131 +39,7 @@
             <div class="one-full column">
                <h1><span id="cursor" string="Team members"></span></h1>
             </div>
-            <div class="one-full flex-grid">
-               <div class="col-xs-6">
-                  <div class="container">
-                     <section class="me unset center flex">
-                        <div style="overflow: auto;">
-                           <img draggable="false" src="assets/images/team-icons/pop-eax.png" class="image-title" style="float: left;">
-                           <h4 class="status">pop_eax</h4>
-                           <h6>Leader - CoFounder</h5>
-                        </div>
-                        <h6 class="status">hobbyist, CTF addict</h6>
-                        <p>web, pwn, reversing, coding</p>
-                     </section>
-                     <div class="buttons">
-                        <a href="https://github.com/pop-eax" class="btn github animation hover" target="_blank">GitHub</a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xs-6">
-                  <div class="container">
-                     <section class="me unset center flex">
-                        <div style="overflow: auto;">
-                           <img draggable="false" src="assets/images/team-icons/placeholder.jpg" class="image-title" style="float: left;">
-                           <h4 class="status">Loozak</h4>
-                           <h6>Leader - CoFounder</h5>
-                        </div>
-                        <h6 class="status">hobbyist, sysadmin</h6>
-                        <p>forensics, crypto, web</p>
-                     </section>
-                     <div class="buttons">
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xs-6">
-                  <div class="container">
-                     <section class="me unset center flex">
-                        <div style="overflow: auto;">
-                           <img draggable="false" src="assets/images/team-icons/0utwrest.jpg" class="image-title" style="float: left;">
-                           <h4 class="status">0utWrest</h4>
-                           <h6>Member</h5>
-                        </div>
-                        <h6 class="status">student</h6>
-                        <p>web, crypto, reversing, coding</p>
-                     </section>
-                     <div class="buttons">
-                        <a href="https://github.com/0utWrest" class="btn github animation hover" target="_blank">GitHub</a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xs-6">
-                  <div class="container">
-                     <section class="me unset center flex">
-                        <div style="overflow: auto;">
-                           <img draggable="false" src="assets/images/team-icons/ciph0n.jpg" class="image-title" style="float: left;">
-                           <h4 class="status">ciph0n</h4>
-                           <h6>Member</h5>
-                        </div>
-                        <h6 class="status">programmer</h6>
-                        <p>jack of all trades</p>
-                     </section>
-                     <div class="buttons">
-                        <a href="https://github.com/ciph0n" class="btn github animation hover" target="_blank">GitHub</a>
-                        <a href="https://twitter.com/ciph0n_" class="btn twitter animation hover" target="_blank">Twitter</a>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xs-6">
-                  <div class="container">
-                     <section class="me unset center flex">
-                        <div style="overflow: auto;">
-                           <img draggable="false" src="assets/images/team-icons/placeholder.jpg" class="image-title" style="float: left;">
-                           <h4 class="status">yotamdabeast</h4>
-                           <h6>Member</h5>
-                        </div>
-                        <h6 class="status">hobbyist, student</h6>
-                        <p>web, misc</p>
-                     </section>
-                     <div class="buttons">
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xs-6">
-                  <div class="container">
-                     <section class="me unset center flex">
-                        <div style="overflow: auto;">
-                           <img draggable="false" src="assets/images/team-icons/cereal.png" class="image-title" style="float: left;">
-                           <h4 class="status">Cereal</h4>
-                           <h6>Member</h5>
-                        </div>
-                        <h6 class="status">skid, student</h6>
-                        <p>web, warmups</p>
-                     </section>
-                     <div class="buttons">
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xs-6">
-                  <div class="container">
-                     <section class="me unset center flex">
-                        <div style="overflow: auto;">
-                           <img draggable="false" src="assets/images/team-icons/placeholder.jpg" class="image-title" style="float: left;">
-                           <h4 class="status">notforsale</h4>
-                           <h6>Member</h5>
-                        </div>
-                        <h6 class="status">Freelance penetration tester</h6>
-                        <p>web, reversing, misc, stego</p>
-                     </section>
-                     <div class="buttons">
-                     </div>
-                  </div>
-               </div>
-               <div class="col-xs-6">
-                  <div class="container">
-                     <section class="me unset center flex">
-                        <div style="overflow: auto;">
-                           <img draggable="false" src="assets/images/team-icons/Ianonhulk.png" class="image-title" style="float: left;">
-                           <h4 class="status">Ianonhulk</h4>
-                           <h6>Member</h5>
-                        </div>
-                        <h6 class="status">Bug Hunter, blue team</h6>
-                        <p>web, misc</p>
-                     </section>
-                     <div class="buttons">
-                     </div>
-                  </div>
-               </div>
+            <div class="one-full flex-grid" id="addhere">
             </div>
          </div>
       </section>
@@ -171,4 +47,54 @@
             <p>Xatha 2020 ®</p>
         </div>
    </body>
+   <script>
+      function addMember(name, role, bio, skills, pic, SM){
+         let div = document.createElement("div");
+         div.className = "col-xs-6";
+         div.innerHTML = `
+         <div class="container">
+                     <section class="me unset center flex">
+                        <div style="overflow: auto;">
+                           <img draggable="false" src="assets/images/team-icons/${pic}" class="image-title" style="float: left;">
+                           <h4 class="status">${name}</h4>
+                           <h6>${role}</h5>
+                        </div>
+                        <h6 class="status">${bio}</h6>
+                        <p>${skills}</p>
+                     </section>
+                     <div class="buttons" id="kk">
+                     `
+         if (SM) {
+            for (i in SM){
+               div.getElementsByClassName("buttons")[0].innerHTML += `
+                           <a href="${members[name][4][i]}" class="btn ${i} animation hover" target="_blank">${i}</a>               
+                        
+                  `;
+            }
+         }
+         div.innerHTML += `
+                     </div>
+               `;
+         document.getElementById("addhere").appendChild(div);
+      }
+      members = {
+                 "pop_eax" : ["Leader - CoFounder", "hobbyist, CTF addict", "web, pwn, reversing, coding", "pop-eax.png", {"Github": "https://github.com/pop-eax", "Twitter": "https://github.com/pop-eax"}],
+                 "Loozak" : ["Leader - CoFounder", "hobbyist, sysadmin", "forensics, crypto, web", "placeholder.jpg", {"Twitter": "https://twitter.com/Loozak1337"}],
+                 "0utWrest": ["Member", "student", "web, crypto, reversing, coding", "0utwrest.jpg", {"Github": "https://github.com/0utWrest"}],
+                 "ciph0n": ["Member", "programmer", "jack of all trades",  "ciph0n.jpg", {"Github": "https://github.com/ciph0n", "Twitter": "https://twitter.com/ciph0n_"}],
+                 "yotamdabeast": ["Member", "hobbyist, student", "web, misc", "placeholder.jpg"],
+                 "Cereal": ["Member", "skid, student", "web, warmups", "cereal.png"],
+                 "notforsale": ["Member", "Freelance penetration tester", "web, reversing, misc, stego", "placeholder.jpg"],
+                 "Ianonhulk": ["Member", "Bug Hunter, blue team", "web, misc", "Ianonhulk.png"]
+                 };
+      for (i in members){ 
+         if (!members[i][4]){
+            addMember(i, members[i][0], members[i][1], members[i][2], members[i][3]);
+         }
+         else{
+            addMember(i, members[i][0], members[i][1], members[i][2], members[i][3], members[i][4]);
+         }
+      }
+
+   </script>
 </html>
